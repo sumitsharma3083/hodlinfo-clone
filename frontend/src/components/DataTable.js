@@ -26,7 +26,7 @@ const DataTable = () => {
 
     return (
         <div className='mt-5' style={{width : "80%" , margin : "auto"}}>
-            <table class="table table-borderless">
+            <table className="table table-borderless table-responsive-sm" style={{width: "100%"}}>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -43,7 +43,7 @@ const DataTable = () => {
                             data.map(item =>{
                                 srNum += 1 ;
                                 return(
-                                    <tr className='mt-5' style={{color:"#fff" , backgroundColor: "#3e4457" , borderRadius:"10px"}}>
+                                    <tr className='mt-5' style={{color:"#fff" , backgroundColor: "#3e4457" ,borderRadius:"10px"}}>
                                     <td scope="row">{srNum}</td>
                                     <td>{item.name}</td>
                                     <td>₹{item.last}</td>
